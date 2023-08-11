@@ -15,15 +15,6 @@ export default function Home() {
 
   const { scrollYProgress } = useScroll();
 
-  const scroll = {
-    initial: {
-      top: 0 * scrollYProgress,
-    },
-    animate: {
-      top: 40 * scrollYProgress,
-    },
-  };
-
   return (
     <>
       <section className={styles.section}></section>
@@ -32,11 +23,9 @@ export default function Home() {
           {images.map((src, i) => {
             return (
               <motion.div
+                style={{ top: scrollYProgress }}
                 key={i}
                 className={styles.imageholder}
-                variants={scroll}
-                initial="initial"
-                animate="animate"
               >
                 <Image
                   src={`/images/${src}`}
