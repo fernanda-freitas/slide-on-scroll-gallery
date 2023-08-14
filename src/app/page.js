@@ -20,25 +20,15 @@ export default function Home() {
     offset: ["0 1", "1 0"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, 2000]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 2000 * 0.2]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, 1000]);
-
-  const [dimension, setDimension] = useState({ height: 0 });
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setDimension();
-    });
-  }, []);
-
-  console.log(dimension);
 
   return (
     <>
       <section className={styles.section}></section>
       <section ref={ref} className={styles.section}>
         <div className={styles.galleryholder}>
-          <motion.div style={{ y }} className={styles.imageholder}>
+          <motion.div style={{ top: y }} className={styles.imageholder}>
             <Image
               src={`/images/${images[0]}`}
               className={styles.galleryimage}
@@ -46,9 +36,9 @@ export default function Home() {
               alt="image"
             ></Image>
           </motion.div>
-          <motion.div style={{ y2 }} className={styles.imageholder}>
+          <motion.div style={{ top: y2 }} className={styles.imageholder}>
             <Image
-              src={`/images/${images[0]}`}
+              src={`/images/${images[1]}`}
               className={styles.galleryimage}
               fill
               alt="image"
