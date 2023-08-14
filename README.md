@@ -2,7 +2,7 @@
 
 </br>
 
-<img src="https://github.com/fernanda-freitas/slide-on-scroll-gallery/assets/33285862/9ee9119b-5dfe-45f6-bcab-979438918f37" alt="Image" width="650">
+<img src="https://github.com/fernanda-freitas/slide-on-scroll-gallery/assets/33285862/a47b4fd0-6467-4c45-9396-4f1b5b252f1f" alt="Image" width="650">
 
 </br>
 </br>
