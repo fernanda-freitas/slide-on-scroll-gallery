@@ -8,7 +8,7 @@
 </br>
 </br>
 
-This is an image gallery section that slides in different timings and uses a soft parallax effect. Built using HTML, CSS, JavaScript and Framer Motion. The functionality of the gallery was inspired by Olivier Larose's <a href="https://blog.olivierlarose.com/demos/smooth-parallax-scroll" target="_blank">Parallax scroll</a>
+This is an image gallery section that slides in different timings and uses a soft parallax effect. It was built using HTML, CSS, JavaScript and Framer Motion. The functionality of the gallery was inspired by Olivier Larose's <a href="https://blog.olivierlarose.com/demos/smooth-parallax-scroll" target="_blank">Parallax scroll</a>
 
 #### First, access the project
 ```bash
